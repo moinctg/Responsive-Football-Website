@@ -1,0 +1,84 @@
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Common Style or Utilitis */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+/* Top Header styles */
+
+.header-container{
+   background-color:  #2D25A0;
+   width: 1440px;
+   height: 677px;  
+   
+
+    
+}
+
+ /* Navbar Section Styles */
+ .nav{
+     width: 587px;
+     height: 24px ;
+     margin-top: 10px;
+     margin-left: 156px;
+
+ }
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 15px;
+
+
+
+}
+.nav img {
+    width: 48px;
+    height: 48px;
+    
+    
+}
+
+.nav:hover{
+    color: rgb(255, 71, 102);
+    padding: 8px;
+}
+
+/* Site Banner Section  */
+
+.site-banner{
+    display: flex;
+   margin-top:207px;
+   margin-left: 156px;
+    
+   
+}
+
+h1{
+    font-size: 64px;
+    color: white;
+    font-weight: bold;
+    line-height: 80px;
+    width: 485px;
+    height: 230px;
+    
+    
+}
+
+.site-banner img{
+    width: 388px;
+    height: 428px;
+    margin-left: 102px;
+    padding-left: 84px;
+    padding-top: 18px;
+    padding-right: 84.01px;
+
+    
+}
