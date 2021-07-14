@@ -147,9 +147,9 @@ grid-template-columns: repeat(3,1fr);
 
 
 .site-highlishts{
-    display: flex;
+display: flex;
 flex-direction: row;
-align-items: flex-start;
+align-items: flex-end;
 padding: 10px 24px;;
 margin-top:224px;
  
@@ -177,10 +177,40 @@ margin-top:224px;
     width: 567px;
     height: 427px;
     margin-top: 49px;
-    margin-left: 102px;
-    padding-left: 84px;
-    padding-top: 18px;
-    padding-right: 84.01px;
+    margin-left: 69px;
+    margin-right: 156px;
+    
 
     
+}
+
+/* footer */
+
+.footer{
+    margin-left: 475px;
+    margin-right: 481.3px;
+    margin-top: 158px;
+    
+}
+.footer img{
+
+width: 483.87px;
+height: 213px;
+
+}
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 631px;
+    padding-bottom: 15px;
+    margin-right: 156.94px;
+top: calc(50% - 32px/2 + 39.5px);
+
+    
+   
+}
+.footer p{
+    text-align: center;
+    font-size: 20px;
 }
