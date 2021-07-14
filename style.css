@@ -99,3 +99,88 @@ transform: rotate(-45deg);
 transform-origin: top,right;
 
 }
+
+/* Player Section  */
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+ width: 1050px;
+height: 474px;
+margin-top: 85px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+
+
+}
+
+
+.players{
+    border: 1px solid white;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+   left: calc(50% - 300px/2);
+   top: 0%;
+   bottom: 74.03%;
+    
+}
+
+.player img{
+    width:30%
+}
+.player-name{
+
+    
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+/* All Highlishts section */
+
+
+.site-highlishts{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 24px;;
+margin-top:224px;
+ 
+}
+ /* Site Banner highlishts  */
+ .site-highlishts h1{
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+    line-height: 45px;
+   margin-left: 156px;
+   
+    
+    
+}
+.site-highlishts p{
+    font-size: 12px;
+    line-height: 15px;
+    padding:15px;
+}
+
+
+  /* Site highlishgts  Image */
+.site-highlishts img{
+    width: 567px;
+    height: 427px;
+    margin-top: 49px;
+    margin-left: 102px;
+    padding-left: 84px;
+    padding-top: 18px;
+    padding-right: 84.01px;
+
+    
+}
