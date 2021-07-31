@@ -19,51 +19,56 @@ body{
 
  /* Navbar Section Styles */
  .nav{
-     width: 587px;
-     height: 24px ;
-     margin-left: 156px;
-     /* margin-top: 53px; */
+
+    display: flex;
+    justify-content: space-between;
+     margin-left: 50px;
+     padding-top: 30px;
+    
+    
      
 
  }
 .nav a{
     text-decoration: none;
     color: white;
-    font-size: 1.2em;
-    padding: 10px;
-    margin-right: 15px;
-    padding-top : 20px;
+    font-size: 22px;
+     padding:12px 12px;
+     margin-right: 10px;
+    
     /* margin-top: 52px; */
-  
+
 
 }
+ .nav  :hover{ 
+     color:#E02C6D;
+ }
+
 .nav-anchor{
-    background-color:brown;
-    margin-right: 400px;
+    
+    background-color:#E02C6D; 
     text-decoration:none;
     
 }
 .nav-anchor:hover{
-    color: chocolate;
+    background-color: rgb(11, 11, 145);
 }
-.nav  :hover{
-    background-color: rgb(255, 71, 71);
- }
+
 /* Site Banner Section  */
 
 .site-banner{
     display: flex;
 }
  /* Site Banner Headign  */
-h1 {
-    font-size: 64px;
+.heading-text {
+    font-size: 50px;
     color: white;
     font-weight: bold;
     line-height: 80px;
-    width: 485px;
-    height: 230px;
-    margin-top:207px;
-   margin-left: 156px; 
+    /* width: 485px;
+    height: 230px; */
+    margin-top:100px;
+   margin-left: 50px; 
 }
 .anchor-button{
     text-decoration: none;
@@ -81,7 +86,7 @@ h1 {
   }
 
   /* Site Banner Image */
-.site-banner img{
+.sidebar img{
     /* width: 388px;
     height: 428px;
     margin-top: 49px;
@@ -89,16 +94,16 @@ h1 {
     padding-left: 84px;
     padding-top: 18px;
     padding-right: 84.01px;   */
-    width: 70%;
-    height:55%;
-    margin-left: 27%;
-    margin-top: 15%;  
+    width: 80%;
+   padding-top: 25px;
+   margin-bottom:35px;
+    
 }
 /* effect  */
-.site-banner img{
+.sidebar img{
     transition: transform 0.2s;
 }
-.site-banner img:hover{
+.sidebar img:hover{
 transform: rotate(-45deg);
 transform-origin: top,right;
 
@@ -111,8 +116,8 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.container{
- width: 1050px;
+.player-container{
+width: 1050px;
 height: 474px;
 margin-top: 120px;
 display: grid;
@@ -123,18 +128,19 @@ grid-template-columns: repeat(3,1fr);
 .players{
     border: 1px solid white;
     background: #FFFFFF;
-    box-shadow: 1px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
-    padding: 5px;
-    width: 300px;
-   left: calc(50% - 300px/2);
-   top: 0%;
-   bottom: 74.03%;
+    padding: 8px 8px;
+    /* width: 300px; */
+   /* left: calc(50% - 300px/2);
+   top: 0%; */
+   margin-bottom: 80%;
+
     
 }
 
 .player img{
-    width:30%
+    width:30%;
 }
 .player-name{
     font-size: 28px;
@@ -145,16 +151,19 @@ grid-template-columns: repeat(3,1fr);
 /* All Highlishts section */
 
 
-.site-highlishts{
+.highlishts-container{
 display: flex;
-flex-direction: row;
-align-items: flex-end;
-padding: 10px 24px;;
+/* flex-direction: row; */
+/* align-items: flex-end; */
+/* padding: 10px 24px;; */
 margin-top:224px;
  
 }
  /* Site Banner highlishts  */
- .site-highlishts h1{
+ .haif-width{
+     width:50%;
+ }
+ .highlishts-heading{
     font-size: 40px;
     color:black;
     font-weight: bold;
@@ -164,7 +173,7 @@ margin-top:224px;
     
     
 }
-.site-highlishts p{
+.highlishts-heading p {
     font-size: 12px;
     line-height: 15px;
     padding:15px;
@@ -172,12 +181,11 @@ margin-top:224px;
 
 
   /* Site highlishgts  Image */
-.site-highlishts img{
-    width: 567px;
-    height: 427px;
+.highlishts-container img{
+    
     margin-top: 49px;
     margin-left: 69px;
-    margin-right: 156px;
+    margin-right: 50px;
 }
 
 /* footer section */
@@ -205,105 +213,31 @@ height: 213px;
     text-align: center;
     font-size: 20px;
 } 
-/*
+ /* Media Query  */
+@media  (max-width:688px){
 
-/* continer{
-    display: flex;
-    width: 50%;
-    margin-right: 5%;
-    margin-left: 5%;
-    padding: 20px;
-}
-.item img{
-    width: 50%;
-    height: 40%;
-    margin-left: 170%;
-
-}
-.top-banner img{
-    width: 30%;
-    height: 25%;
-    margin-left: 37%;
-    margin-top: 3%;
-}
-
-        
-footer  p{
-    text-align: center;
-}  */
-
-
-/* Media Quries */
-/* ------for ---- */
-/* Moble Devices */
-
-/* @media only  screen and (max-width: 688px){
-    .header-container {
-        width: 360px;
-        height: 695px;
-        
-    }
-    .nav{
-        width: 30%;
+  .nav{
+      display: inline-block;
+  }
+    .nav a{
+        display: inline;
+        font-size: 12px;
+        padding: 5px;
     }
     .site-banner{
-        display: none;
-    }
-    h1{
-        width:278px;
-        height: 138;
-
-    }
-    .site-banner img{
-        width: 329px;
-        height: 259.17px;
-    }
-
-    .container{
-        display: none;
         flex-direction: column;
-        grid-template-columns: repeat(1,1fr);
     }
-
-  
-    
-
-    
-} */
-@media only screen and (max-width:688px){
-    /* .header-container{
-    /* flex-direction:column;
-    } */ */
-    .site-banner{
-        flex-direction:column;
+    .heading-tex{
+   font-size:36px;
+   
+   }
+    .highlishts-container{
+       flex-direction: column;
     }
-    /* .nav{
-       
-    } */
-    .continer{
-          flex-direction: column;
-          
-      }
-        .player{
-            grid-template-columns: repeat(1,1fr);
-      }
-      .site-highlishts{
-          flex-direction: column;
-      }
+    .highlishts-heading{
+        /* margin-left:50px; */
+        font-size:15px;
+    }
   }     
 
-                    /* Teblet Devices */
-
-            @media only screen and (min:688px) and(max:992px){
-                .continer{
-                    flex-direction: column;
-                   
-                }
-                .player{
-                    grid-template-columns: repeat(1,2fr);
-              }
-              .site-highlishts{
-                flex-direction: column;
-            }
-
-            }
+ 
